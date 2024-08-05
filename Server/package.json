@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": " project2   for Full Stack",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": " nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Project2",
+    "FullStack",
+    "Afzal"
+  ],
+  "author": "Afzal",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
