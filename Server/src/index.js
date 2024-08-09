@@ -22,6 +22,13 @@ app.get("/getUsers", function (req, res) {
       res.json(err);
     });
 });
+app.post("/createUser", async (req, res) => {
+  const user = req.body;
+  const newUser = new userModel(user);
+  await newUser.save();
+  console.log(newUser);
+  res.json(user);
+});
 
 ConnectDB()
   .then(() => {
